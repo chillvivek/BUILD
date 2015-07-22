@@ -1,4 +1,4 @@
-<img src = "https://github.com/SAP/BUILD/blob/temp_build_all/docs/images/BUILD_Logo_Light.png?raw=true" height="128"> 
+<img src = "https://github.com/SAP/BUILD/blob/master/docs/images/BUILD_Logo_Light.png?raw=true" height="128"> 
 
 # Overview 
 BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
