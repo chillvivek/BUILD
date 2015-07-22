@@ -29,7 +29,6 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [BUILD_Projects](https://github.com/SAP/BUILD/tree/master/BUILD_Projects)
 + [BUILD_UICatalogManager](https://github.com/SAP/BUILD/tree/master/BUILD_UICatalogManager)
 + [BUILD_UserResearch](https://github.com/SAP/BUILD/tree/master/BUILD_UserResearch)
-+ [BUILD_UXRuleEngine](https://github.com/SAP/BUILD/tree/master/BUILD_UXRuleEngine)
 + [BUILD_BusinessCatalogManager](https://github.com/SAP/BUILD/tree/master/BUILD_BusinessCatalogManager)
 + [BUILD_Auth](https://github.com/SAP/BUILD/tree/master/BUILD_Auth) 
 + [BUILD_Shell](https://github.com/SAP/BUILD/tree/master/BUILD_Shell)
@@ -38,9 +37,9 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [BUILD_AngularUIGrid](https://github.com/SAP/BUILD/tree/master/BUILD_NgUIGrid)
 + [BUILD_AngularUIGridTree](https://github.com/SAP/BUILD/tree/master/BUILD_norman-angular-ui-tree)
 + [BUILD_AngularUIGridZip](https://github.com/SAP/BUILD/tree/master/BUILD_AngularZip)
-+ [BUILD_Html2Canvas](https://github.com/SAP/BUILD/tree/master/BUILD_Html2Canvas)
++ [BUILD_Html2Canvas](https://github.com/SAP/BUILD/tree/master/angular-sap-html2canvas)
 + [BUILD_KeyBoardEventPolyfill](https://github.com/SAP/BUILD/tree/master/BUILD_norman-keyboard-event-polyfill)
-+ [BUILD_D3Plugins](https://github.com/SAP/BUILD/tree/master/BUILD_norman-d3-plugins)
++ [BUILD_D3Plugins](https://github.com/SAP/BUILD/tree/master/angular-sap-d3-plugins)
 + [BUILD_jQuery](https://github.com/SAP/BUILD/tree/master/BUILD_jquery-norman)
 
 **Admin Modules**
@@ -52,30 +51,6 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
 
 #Getting Started
-
-## What's included
-|Folder/File  | Description |
-| ------------- | ------------- | 
-|client  |  |
-| docs |  | 
-| grunt-conf |  |
-| server |  |
-| .dashboard.yml |  |
-| .editorconfig |  | 
-| .gitattributes |  |
-| .gitignore |  |
-| .travis.yml |  | 
-| Community Roles.md |  |
-| Contributing.md |  |
-| Contributing.pdf |  | 
-| Gruntfile |  |
-| LICENSE.txt |  |
-| README.md |  | 
-| bump-config.json  |  |
-| karma.conf.js  |  |
-| package.json  |  | 
-| run.js |  |
-
 
 ##Prerequisites
 - install [GIT](https://git-scm.com/downloads)
