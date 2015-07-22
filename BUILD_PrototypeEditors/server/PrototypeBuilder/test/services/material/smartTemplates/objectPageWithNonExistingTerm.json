@@ -1,0 +1,28 @@
+{
+  "name": "SimpleObjectPage",
+  "mainEntityId": "Entity2",
+  "rootControlId": "Header",
+  "floorplan": "OBJECTPAGE",
+  "controls": [
+    {
+      "controlId": "Header",
+      "controlName": "Header",
+      "parentControlId": null,
+      "catalogControlName": "Header",
+      "properties": [
+        {
+          "name": "Title",
+          "value": "My Product"
+        },
+        {
+          "name": "Description",
+          "value": "My Crazy Customer"
+        },
+        {
+          "name": "ObjectType",
+          "value": "Product"
+        }
+      ]
+    }
+  ]
+}

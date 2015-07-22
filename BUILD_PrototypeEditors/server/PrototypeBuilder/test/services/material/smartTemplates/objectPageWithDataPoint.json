@@ -1,0 +1,56 @@
+{
+  "name": "SimpleObjectPage",
+  "mainEntityId": "Entity1",
+  "rootControlId": "Header",
+  "floorplan": "OBJECTPAGE",
+  "controls": [
+    {
+      "controlId": "Header",
+      "controlName": "Header",
+      "parentControlId": null,
+      "catalogControlName": "Header",
+      "properties": [
+        {
+          "name": "Title",
+          "value": "My Sales Order"
+        },
+        {
+          "name": "Description",
+          "value": "My Crazy Customer"
+        },
+        {
+          "name": "ObjectType",
+          "value": "Sales Order"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "kpis",
+          "children": [
+            "MyKpi"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "MyKpi",
+      "controlName": "NumericKPI",
+      "parentControlId": null,
+      "catalogControlName": "NumericKPI",
+      "properties": [
+        {
+          "name": "Label",
+          "value": "Net Amount"
+        },
+        {
+          "name": "Value",
+          "value": "10000"
+        },
+        {
+          "name": "Currency",
+          "value": "EUR"
+        }
+      ]
+    }
+  ]
+}

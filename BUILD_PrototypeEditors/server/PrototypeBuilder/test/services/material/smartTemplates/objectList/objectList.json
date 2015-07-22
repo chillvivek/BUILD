@@ -1,0 +1,178 @@
+{
+  "name": "SimpleObjectPage",
+  "rootControlId": "ObjectList",
+  "mainEntity": "Entity1",
+  "floorplan": "OBJECTLIST",
+  "controls": [
+    {
+      "controlId": "ObjectList",
+      "controlName": "ObjectList",
+      "parentControlId": null,
+      "catalogControlName": "ObjectList",
+      "properties": [
+      ],
+      "groups": [
+        {
+          "groupId": "filters",
+          "children": [
+            "Filter1",
+            "Filter2"
+          ]
+        },
+        {
+          "groupId": "tables",
+          "children": [
+            "Table1"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "Filter1",
+      "controlName": "Filter",
+      "parentControlId": null,
+      "catalogControlName": "Filter",
+      "properties": [
+        {
+          "name": "FilterProperty",
+          "value": "",
+          "binding": {
+            "isRelative": true,
+            "paths": [
+              {
+                "entityId": "Entity1",
+                "propertyId": "Prop1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "Filter2",
+      "controlName": "Filter",
+      "parentControlId": null,
+      "catalogControlName": "Filter",
+      "properties": [
+        {
+          "name": "FilterProperty",
+          "value": "",
+          "binding": {
+            "isRelative": true,
+            "paths": [
+              {
+                "entityId": "Entity1",
+                "propertyId": "Prop2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "ActionButton1",
+      "controlName": "ActionButton",
+      "parentControlId": null,
+      "catalogControlName": "ActionButton",
+      "properties": [
+        {
+          "name": "Label",
+          "value": "My Label"
+        },
+        {
+          "name": "Action",
+          "value": "My Action"
+        }
+      ]
+    },
+    {
+      "controlId": "Table1",
+      "controlName": "Table",
+      "parentControlId": null,
+      "catalogControlName": "Table",
+      "properties": [
+        {
+          "name": "header",
+          "value": "My Label"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "columns",
+          "children": [
+            "Column1",
+            "Column2"
+          ]
+        },
+        {
+          "groupId": "actionButtons",
+          "children": [
+            "ActionButton1"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "Column1",
+      "controlName": "BoldColumn",
+      "parentControlId": null,
+      "catalogControlName": "BoldColumn",
+      "properties": [
+        {
+          "name": "Importance",
+          "value": "UI.Importance/High"
+        },
+        {
+          "name": "Label",
+          "value": "MyCol"
+        },
+        {
+          "name": "Value",
+          "value": "",
+          "binding": {
+            "isRelative": true,
+            "paths": [
+              {
+                "entityId": "Entity1",
+                "propertyId": "Prop1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "Column2",
+      "controlName": "ColumnWithLinks",
+      "parentControlId": null,
+      "catalogControlName": "ColumnWithLinks",
+      "properties": [
+        {
+          "name": "Importance",
+          "value": "UI.Importance/High"
+        },
+        {
+          "name": "Label",
+          "value": "MyCol2"
+        },
+        {
+          "name": "Value",
+          "value": "",
+          "binding": {
+            "isRelative": true,
+            "paths": [
+              {
+                "entityId": "Entity1",
+                "propertyId": "Prop2"
+              }
+            ]
+          }
+        },
+        {
+          "name" : "Url",
+          "value" : "MyUrl"
+        }
+      ]
+    }
+  ]
+}

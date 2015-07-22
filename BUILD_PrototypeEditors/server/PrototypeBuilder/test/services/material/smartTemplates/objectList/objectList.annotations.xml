@@ -1,0 +1,42 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zanno4sample_anno_mdl.v1">
+            <Annotations Target="MyTestProject.SalesOrder">
+                <Annotation Term="com.sap.vocabularies.UI.v1.SelectionFields">
+                    <Collection>
+                        <PropertyPath>ID</PropertyPath>
+                        <PropertyPath>Name</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="com.sap.vocabularies.UI.v1.HeaderInfo">
+                    <Record Type="com.sap.vocabularies.UI.v1.HeaderInfoType">
+                        <PropertyValue Property="TypeNamePlural" String="My Label"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="com.sap.vocabularies.UI.v1.LineItem">
+                    <Collection>
+                        <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                            <Annotation Term="com.sap.vocabularies.UI.v1.Importance" EnumMember="UI.Importance/High"/>
+                            <PropertyValue Property="Label" String="MyCol"/>
+                            <PropertyValue Property="Value" Path="ID"/>
+                        </Record>
+                        <Record Type="com.sap.vocabularies.UI.v1.DataFieldWithUrl">
+                            <Annotation Term="com.sap.vocabularies.UI.v1.Importance" EnumMember="UI.Importance/High"/>
+                            <PropertyValue Property="Label" String="MyCol2"/>
+                            <PropertyValue Property="Value" Path="Name"/>
+                            <PropertyValue Property="Url" String="MyUrl"/>
+                        </Record>
+                        <Record Type="com.sap.vocabularies.UI.v1.DataFieldForAction">
+                            <PropertyValue Property="Label" String="My Label"/>
+                            <PropertyValue Property="Action" String="My Action"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="MyTestProject.SalesOrder/ID">
+                <Annotation Term="com.sap.vocabularies.Common.v1.Text" Path="ID"/>
+            </Annotations>
+            <Annotations Target="MyTestProject.SalesOrder/Name"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

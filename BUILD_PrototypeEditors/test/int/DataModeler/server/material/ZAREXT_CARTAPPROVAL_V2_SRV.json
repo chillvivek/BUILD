@@ -1,0 +1,4211 @@
+{
+    "entities": [
+        {
+            "name": "Subscription",
+            "nameSet": "SubscriptionCollection",
+            "label": "Subscription",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "semantics": "subscriptions",
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "user",
+                    "label": "User Name",
+                    "order": 2,
+                    "isETag": false,
+                    "maxLength": 12,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "updated",
+                    "label": "Time Stamp",
+                    "order": 3,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "title",
+                    "label": "Title",
+                    "order": 4,
+                    "isETag": false,
+                    "maxLength": 255,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "deliveryAddress",
+                    "label": "Delivery Address",
+                    "order": 5,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "persistNotifications",
+                    "label": "Persist Notification",
+                    "order": 6,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "collection",
+                    "label": "Collection",
+                    "order": 7,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "filter",
+                    "label": "Filter",
+                    "order": 8,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "select",
+                    "label": "Select",
+                    "order": 9,
+                    "isETag": false,
+                    "maxLength": 255,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "changeType",
+                    "label": "Change Type",
+                    "order": 10,
+                    "isETag": false,
+                    "maxLength": 30,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "Notification",
+            "nameSet": "NotificationCollection",
+            "label": "Notification",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "semantics": "notifications",
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "collection",
+                    "label": "Collection",
+                    "order": 2,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "title",
+                    "label": "Notif. Text",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "updated",
+                    "label": "Time Stamp",
+                    "order": 4,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "changeType",
+                    "label": "Change Type",
+                    "order": 5,
+                    "isETag": false,
+                    "maxLength": 30,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "entriesOfInterest",
+                    "label": "No. of Entries",
+                    "order": 6,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int32"
+                },
+                {
+                    "name": "recipient",
+                    "label": "Recipient",
+                    "order": 7,
+                    "isETag": false,
+                    "maxLength": 112,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "Task",
+            "nameSet": "TaskCollection",
+            "label": "Task",
+            "media": true,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [
+                {
+                    "type": "Person",
+                    "roles": [
+                        {
+                            "id": "fullName",
+                            "path": "ForwardingUserName"
+                        }
+                    ]
+                }
+            ],
+            "tags": [],
+            "navigationProperties": [
+                {
+                    "name": "TaskDefinitionData",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                },
+                {
+                    "name": "Description",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                },
+                {
+                    "name": "UIExecutionLink",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                },
+                {
+                    "name": "CustomAttributeData",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "Comments",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "Attachments",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "CreatedByDetails",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                },
+                {
+                    "name": "ProcessorDetails",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                },
+                {
+                    "name": "PossibleAgents",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "PotentialOwners",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "ProcessingLogs",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "TaskObjects",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "SCAApproversHeader",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                },
+                {
+                    "name": "SCAItems",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                }
+            ],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskSupportsAddAttachments",
+                    "label": "TaskSupportsAddAttachments",
+                    "order": 2,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsAddComments",
+                    "label": "TaskSupportsAddComments",
+                    "order": 3,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsAttachments",
+                    "label": "TaskSupportsAttachments",
+                    "order": 4,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsComments",
+                    "label": "TaskSupportsComments",
+                    "order": 5,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsCreatedByDetails",
+                    "label": "TaskSupportsCreatedByDetails",
+                    "order": 6,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsCustomAttributeData",
+                    "label": "TaskSupportsCustomAttributeData",
+                    "order": 7,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsDescription",
+                    "label": "TaskSupportsDescription",
+                    "order": 8,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsPossibleAgents",
+                    "label": "TaskSupportsPossibleAgents",
+                    "order": 9,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsPotentialOwners",
+                    "label": "TaskSupportsPotentialOwners",
+                    "order": 10,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsProcessingLogs",
+                    "label": "TaskSupportsProcessingLogs",
+                    "order": 11,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsProcessorDetails",
+                    "label": "TaskSupportsProcessorDetails",
+                    "order": 12,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsTaskDefinitionData",
+                    "label": "TaskSupportsTaskDefinitionData",
+                    "order": 13,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsTaskObject",
+                    "label": "TaskSupportsTaskObject",
+                    "order": 14,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsUIExecutionLink",
+                    "label": "TaskSupportsUIExecutionLink",
+                    "order": 15,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsCancelResubmission",
+                    "label": "TaskSupportsCancelResubmission",
+                    "order": 16,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsConfirm",
+                    "label": "TaskSupportsConfirm",
+                    "order": 17,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsClaim",
+                    "label": "TaskSupportsClaim",
+                    "order": 18,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsForward",
+                    "label": "TaskSupportsForward",
+                    "order": 19,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsRelease",
+                    "label": "TaskSupportsRelease",
+                    "order": 20,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsResubmit",
+                    "label": "TaskSupportsResubmit",
+                    "order": 21,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "TaskSupportsSetPriority",
+                    "label": "TaskSupportsSetPriority",
+                    "order": 22,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "Instance ID",
+                    "order": 23,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskDefinitionID",
+                    "label": "Task definition ID",
+                    "order": 24,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskDefinitionName",
+                    "label": "Task definition name",
+                    "order": 25,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskTitle",
+                    "label": "Task Title",
+                    "order": 26,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Priority",
+                    "label": "Priority",
+                    "order": 27,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Status",
+                    "label": "Status",
+                    "order": 28,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "StatusText",
+                    "label": "Status Text",
+                    "order": 29,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "CreatedOn",
+                    "label": "Created on",
+                    "order": 30,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "CreatedBy",
+                    "label": "Created by",
+                    "order": 31,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "CreatedByName",
+                    "label": "Created by Name",
+                    "order": 32,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Processor",
+                    "label": "Processor",
+                    "order": 33,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ProcessorName",
+                    "label": "Processor Name",
+                    "order": 34,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "SubstitutedUser",
+                    "label": "Substituted User",
+                    "order": 35,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "SubstitutedUserName",
+                    "label": "Substituted User Name",
+                    "order": 36,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "StartDeadLine",
+                    "label": "Start Deadline",
+                    "order": 37,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "CompletionDeadLine",
+                    "label": "Completion Deadline",
+                    "order": 38,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "ExpiryDate",
+                    "label": "Expiry Date",
+                    "order": 39,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "IsEscalated",
+                    "label": "Is Escalated",
+                    "order": 40,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsComments",
+                    "label": "Supports Comments",
+                    "order": 41,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "HasComments",
+                    "label": "Has Comments",
+                    "order": 42,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsAttachments",
+                    "label": "Supports Attachments",
+                    "order": 43,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "HasAttachments",
+                    "label": "Has Attachments",
+                    "order": 44,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "HasPotentialOwners",
+                    "label": "Has Potential Owners",
+                    "order": 45,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsClaim",
+                    "label": "Supports Claim",
+                    "order": 46,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsRelease",
+                    "label": "Supports Release",
+                    "order": 47,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsForward",
+                    "label": "SupportsForward",
+                    "order": 48,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "mime_type",
+                    "label": "MIME Type",
+                    "order": 49,
+                    "isETag": false,
+                    "maxLength": 128,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "PriorityNumber",
+                    "label": "Priority Number",
+                    "order": 50,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int16"
+                },
+                {
+                    "name": "ScenarioID",
+                    "label": "Scenario ID",
+                    "order": 51,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ForwardingUser",
+                    "label": "Forwarding User",
+                    "order": 52,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ForwardingUserName",
+                    "label": "Forwarding User Name",
+                    "order": 53,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Value",
+                    "label": "Value",
+                    "order": 54,
+                    "isETag": false,
+                    "precision": 15,
+                    "scale": 2,
+                    "unit": "Currency",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "Decimal"
+                },
+                {
+                    "name": "Currency",
+                    "label": "Currency",
+                    "order": 55,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApprovalOnItemlevel",
+                    "label": "Indicator",
+                    "order": 56,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "ScNumber",
+                    "label": "ScNumber",
+                    "order": 57,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "DeliveryDate",
+                    "label": "Time Stamp",
+                    "order": 58,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "___Task_TaskDefinitionData_ID",
+                    "label": "___Task_TaskDefinitionData_ID",
+                    "order": 59,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_Description_ID",
+                    "label": "___Task_Description_ID",
+                    "order": 60,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_UIExecutionLink_ID",
+                    "label": "___Task_UIExecutionLink_ID",
+                    "order": 61,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_CreatedByDetails_ID",
+                    "label": "___Task_CreatedByDetails_ID",
+                    "order": 62,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_ProcessorDetails_ID",
+                    "label": "___Task_ProcessorDetails_ID",
+                    "order": 63,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___ConsumerScenario_Tasks_ID",
+                    "label": "___ConsumerScenario_Tasks_ID",
+                    "order": 64,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "TaskDefinition",
+            "nameSet": "TaskDefinitionCollection",
+            "label": "TaskDefinition",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [
+                {
+                    "name": "CustomAttributeDefinitionData",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                }
+            ],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskDefinitionID",
+                    "label": "TaskDefinitionID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskName",
+                    "label": "TaskName",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Category",
+                    "label": "Category",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "TaskDescription",
+            "nameSet": "TaskDescriptionCollection",
+            "label": "TaskDescription",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Description",
+                    "label": "Description",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "DescriptionAsHtml",
+                    "label": "DescriptionAsHtml",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "UIExecution",
+            "nameSet": "UIExecutionCollection",
+            "label": "UIExecution",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "GUI_Link",
+                    "label": "GUI_Link",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "FilterOption",
+            "nameSet": "FilterOptionCollection",
+            "label": "FilterOption",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Type",
+                    "label": "Filter Type",
+                    "order": 2,
+                    "isETag": false,
+                    "maxLength": 10,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TechnicalName",
+                    "label": "Technical Name",
+                    "order": 3,
+                    "isETag": false,
+                    "maxLength": 50,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "DisplayName",
+                    "label": "Displayed Name",
+                    "order": 4,
+                    "isETag": false,
+                    "maxLength": 32,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "CustomAttributeDefinition",
+            "nameSet": "CustomAttributeDefinitionCollection",
+            "label": "CustomAttributeDefinition",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskDefinitionID",
+                    "label": "TaskDefinitionID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Name",
+                    "label": "Name",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Type",
+                    "label": "Type",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Label",
+                    "label": "Label",
+                    "order": 5,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___TaskDefinition_CustomAttributeDefinitionData_ID",
+                    "label": "___TaskDefinition_CustomAttributeDefinitionData_ID",
+                    "order": 6,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "CustomAttribute",
+            "nameSet": "CustomAttributeCollection",
+            "label": "CustomAttribute",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Name",
+                    "label": "Name",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Value",
+                    "label": "Value",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_CustomAttributeData_ID",
+                    "label": "___Task_CustomAttributeData_ID",
+                    "order": 5,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SubstitutionRule",
+            "nameSet": "SubstitutionRuleCollection",
+            "label": "SubstitutionRule",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SubstitutionRule2",
+            "nameSet": "SubstitutesRuleCollection",
+            "label": "SubstitutionRule2",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [
+                {
+                    "type": "Person",
+                    "roles": [
+                        {
+                            "id": "fullName",
+                            "path": "FullName"
+                        }
+                    ]
+                }
+            ],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "SubstitutionRuleID",
+                    "label": "SubstitutionRuleID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "User",
+                    "label": "User",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "BeginDate",
+                    "label": "Time Stamp",
+                    "order": 4,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "EndDate",
+                    "label": "Time Stamp",
+                    "order": 5,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "FullName",
+                    "label": "FullName",
+                    "order": 6,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "IsEnabled",
+                    "label": "IsEnabled",
+                    "order": 7,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsDeleteSubstitutionRule",
+                    "label": "SupportsDeleteSubstitutionRule",
+                    "order": 8,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "SupportsEnableSubstitutionRule",
+                    "label": "SupportsEnableSubstitutionRule",
+                    "order": 9,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "Mode",
+                    "label": "Mode",
+                    "order": 10,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Profile",
+                    "label": "Profile",
+                    "order": 11,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ProfileText",
+                    "label": "ProfileText",
+                    "order": 12,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SubstitutionProfile",
+            "nameSet": "SubstitutionProfileCollection",
+            "label": "SubstitutionProfile",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Profile",
+                    "label": "Substitute Profile",
+                    "order": 2,
+                    "isETag": false,
+                    "maxLength": 12,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ProfileText",
+                    "label": "Substitute Profile",
+                    "order": 3,
+                    "isETag": false,
+                    "maxLength": 25,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "Comment",
+            "nameSet": "CommentCollection",
+            "label": "Comment",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [
+                {
+                    "type": "Person",
+                    "roles": [
+                        {
+                            "id": "fullName",
+                            "path": "CreatedByName"
+                        }
+                    ]
+                }
+            ],
+            "tags": [],
+            "navigationProperties": [
+                {
+                    "name": "CreatedByDetails",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                }
+            ],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "CreatedAt",
+                    "label": "Time Stamp",
+                    "order": 3,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "CreatedBy",
+                    "label": "CreatedBy",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "CreatedByName",
+                    "label": "CreatedByName",
+                    "order": 5,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Text",
+                    "label": "Text",
+                    "order": 6,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_Comments_ID",
+                    "label": "___Task_Comments_ID",
+                    "order": 7,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Comment_CreatedByDetails_ID",
+                    "label": "___Comment_CreatedByDetails_ID",
+                    "order": 8,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "Attachment",
+            "nameSet": "AttachmentCollection",
+            "label": "Attachment",
+            "media": true,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [
+                {
+                    "type": "Person",
+                    "roles": [
+                        {
+                            "id": "fullName",
+                            "path": "CreatedByName"
+                        }
+                    ]
+                }
+            ],
+            "tags": [],
+            "navigationProperties": [
+                {
+                    "name": "CreatedByDetails",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": false
+                }
+            ],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AttachmentSupportsDelete",
+                    "label": "AttachmentSupportsDelete",
+                    "order": 2,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "FileName",
+                    "label": "FileName",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "CreatedAt",
+                    "label": "Time Stamp",
+                    "order": 5,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "CreatedBy",
+                    "label": "CreatedBy",
+                    "order": 6,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "CreatedByName",
+                    "label": "CreatedByName",
+                    "order": 7,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "mime_type",
+                    "label": "MIME Type",
+                    "order": 8,
+                    "isETag": false,
+                    "maxLength": 128,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "FileSize",
+                    "label": "FileSize",
+                    "order": 9,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int32"
+                },
+                {
+                    "name": "FileDisplayName",
+                    "label": "FileDisplayName",
+                    "order": 10,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_Attachments_ID",
+                    "label": "___Task_Attachments_ID",
+                    "order": 11,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Attachment_CreatedByDetails_ID",
+                    "label": "___Attachment_CreatedByDetails_ID",
+                    "order": 12,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "UserInfo",
+            "nameSet": "UserInfoCollection",
+            "label": "UserInfo",
+            "media": true,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "UserInfo2",
+            "nameSet": "SubstitutedUsersCollection",
+            "label": "UserInfo2",
+            "media": true,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [
+                {
+                    "type": "Person",
+                    "roles": [
+                        {
+                            "id": "fullName",
+                            "path": "DisplayName"
+                        },
+                        {
+                            "id": "givenName",
+                            "path": "FirstName"
+                        },
+                        {
+                            "id": "familyName",
+                            "path": "LastName"
+                        }
+                    ]
+                },
+                {
+                    "type": "RoleInOrganization",
+                    "roles": [
+                        {
+                            "id": "orgUnit",
+                            "path": "Department"
+                        }
+                    ]
+                }
+            ],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AddressStreet",
+                    "label": "AddressStreet",
+                    "order": 2,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AddressStreetNumber",
+                    "label": "AddressStreetNumber",
+                    "order": 3,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AddressCity",
+                    "label": "AddressCity",
+                    "order": 4,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AddressPostalCode",
+                    "label": "AddressPostalCode",
+                    "order": 5,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AddressState",
+                    "label": "AddressState",
+                    "order": 6,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "AddressCountry",
+                    "label": "AddressCountry",
+                    "order": 7,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "UniqueName",
+                    "label": "UniqueName",
+                    "order": 8,
+                    "isETag": false,
+                    "maxLength": 12,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "DisplayName",
+                    "label": "DisplayName",
+                    "order": 9,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "FirstName",
+                    "label": "FirstName",
+                    "order": 10,
+                    "isETag": false,
+                    "semantics": "givenname",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "LastName",
+                    "label": "LastName",
+                    "order": 11,
+                    "isETag": false,
+                    "semantics": "familyname",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Company",
+                    "label": "Company",
+                    "order": 12,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Department",
+                    "label": "Department",
+                    "order": 13,
+                    "isETag": false,
+                    "semantics": "org-unit",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Email",
+                    "label": "Email",
+                    "order": 14,
+                    "isETag": false,
+                    "semantics": "email",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "WorkPhone",
+                    "label": "WorkPhone",
+                    "order": 15,
+                    "isETag": false,
+                    "semantics": "tel;type=work",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "MobilePhone",
+                    "label": "MobilePhone",
+                    "order": 16,
+                    "isETag": false,
+                    "semantics": "tel;type=cell",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "HomePhone",
+                    "label": "HomePhone",
+                    "order": 17,
+                    "isETag": false,
+                    "semantics": "tel",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "mime_type",
+                    "label": "mime_type",
+                    "order": 18,
+                    "isETag": false,
+                    "maxLength": 128,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_PossibleAgents_ID",
+                    "label": "___Task_PossibleAgents_ID",
+                    "order": 19,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_PotentialOwners_ID",
+                    "label": "___Task_PotentialOwners_ID",
+                    "order": 20,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "ConsumerScenario",
+            "nameSet": "ConsumerScenarioCollection",
+            "label": "ConsumerScenario",
+            "media": true,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [
+                {
+                    "name": "Tasks",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                }
+            ],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ConsumerType",
+                    "label": "Consumer Type",
+                    "order": 2,
+                    "isETag": false,
+                    "maxLength": 32,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "UniqueName",
+                    "label": "Scenario Identifier",
+                    "order": 3,
+                    "isETag": false,
+                    "maxLength": 32,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "DisplayName",
+                    "label": "Scenario Name",
+                    "order": 4,
+                    "isETag": false,
+                    "maxLength": 255,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TotalItems",
+                    "label": "Number",
+                    "order": 5,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int32"
+                },
+                {
+                    "name": "OrderNumber",
+                    "label": "Scenario Order",
+                    "order": 6,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int32"
+                },
+                {
+                    "name": "SortBy",
+                    "label": "Sort by Property",
+                    "order": 7,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "IsMassActionEnabled",
+                    "label": "IsMassActionEnabled",
+                    "order": 8,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "IsQuickActionEnabled",
+                    "label": "IsQuickActionEnabled",
+                    "order": 9,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Boolean"
+                },
+                {
+                    "name": "ApplicationUrl",
+                    "label": "Application URL",
+                    "order": 10,
+                    "isETag": false,
+                    "maxLength": 255,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "IconUrl",
+                    "label": "Icon URL",
+                    "order": 11,
+                    "isETag": false,
+                    "maxLength": 128,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Extension1",
+                    "label": "Extension1",
+                    "order": 12,
+                    "isETag": false,
+                    "maxLength": 32,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Extension2",
+                    "label": "Extension2",
+                    "order": 13,
+                    "isETag": false,
+                    "maxLength": 64,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Extension3",
+                    "label": "Extension3",
+                    "order": 14,
+                    "isETag": false,
+                    "maxLength": 128,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ScenarioServiceURL",
+                    "label": "ScenarioServiceURL",
+                    "order": 15,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "mime_type",
+                    "label": "MIME Type",
+                    "order": 16,
+                    "isETag": false,
+                    "maxLength": 128,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "Scenario",
+            "nameSet": "ScenarioCollection",
+            "label": "Scenario",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "key",
+                    "label": "Scenario Identifier",
+                    "order": 2,
+                    "isETag": false,
+                    "maxLength": 32,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "number",
+                    "label": "Number",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int32"
+                },
+                {
+                    "name": "title",
+                    "label": "Scenario Name",
+                    "order": 4,
+                    "isETag": false,
+                    "maxLength": 255,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "targetParams",
+                    "label": "targetParams",
+                    "order": 5,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "ProcessingLog",
+            "nameSet": "ProcessingLogCollection",
+            "label": "ProcessingLog",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [
+                {
+                    "type": "Person",
+                    "roles": [
+                        {
+                            "id": "fullName",
+                            "path": "PerformedByName"
+                        }
+                    ]
+                }
+            ],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "OrderID",
+                    "label": "OrderID",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "Int32"
+                },
+                {
+                    "name": "Timestamp",
+                    "label": "Time Stamp",
+                    "order": 4,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "ActionName",
+                    "label": "ActionName",
+                    "order": 5,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "PerformedBy",
+                    "label": "PerformedBy",
+                    "order": 6,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "PerformedByName",
+                    "label": "PerformedByName",
+                    "order": 7,
+                    "isETag": false,
+                    "semantics": "name",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Comments",
+                    "label": "Comments",
+                    "order": 8,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "TaskStatus",
+                    "label": "TaskStatus",
+                    "order": 9,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_ProcessingLogs_ID",
+                    "label": "___Task_ProcessingLogs_ID",
+                    "order": 10,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SystemInfo",
+            "nameSet": "SystemInfoCollection",
+            "label": "SystemInfo",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "SystemAlias",
+                    "label": "SystemAlias",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "SystemType",
+                    "label": "SystemType",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "TaskObject",
+            "nameSet": "TaskObjectCollection",
+            "label": "TaskObject",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ObjectId",
+                    "label": "ObjectId",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ObjectLink",
+                    "label": "ObjectLink",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Label",
+                    "label": "Label",
+                    "order": 5,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_TaskObjects_ID",
+                    "label": "___Task_TaskObjects_ID",
+                    "order": 6,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SCAItem",
+            "nameSet": "SCAItemCollection",
+            "label": "SCAItem",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ItemNumber",
+                    "label": "ItemNumber",
+                    "order": 3,
+                    "isETag": false,
+                    "maxLength": 10,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Description",
+                    "label": "Description",
+                    "order": 4,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "VendorId",
+                    "label": "VendorId",
+                    "order": 5,
+                    "isETag": false,
+                    "maxLength": 10,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "VendorName",
+                    "label": "VendorName",
+                    "order": 6,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Unit",
+                    "label": "Unit",
+                    "order": 7,
+                    "isETag": false,
+                    "maxLength": 3,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "UnitText",
+                    "label": "UnitText",
+                    "order": 8,
+                    "isETag": false,
+                    "maxLength": 10,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Quantity",
+                    "label": "Quantity",
+                    "order": 9,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Value",
+                    "label": "Value",
+                    "order": 10,
+                    "isETag": false,
+                    "precision": 15,
+                    "scale": 2,
+                    "unit": "Currency",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "Decimal"
+                },
+                {
+                    "name": "Currency",
+                    "label": "Currency",
+                    "order": 11,
+                    "isETag": false,
+                    "maxLength": 5,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Price",
+                    "label": "Price",
+                    "order": 12,
+                    "isETag": false,
+                    "precision": 13,
+                    "scale": 2,
+                    "unit": "PriceUnit",
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "Decimal"
+                },
+                {
+                    "name": "PriceUnit",
+                    "label": "PriceUnit",
+                    "order": 13,
+                    "isETag": false,
+                    "precision": 31,
+                    "scale": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "Decimal"
+                },
+                {
+                    "name": "DeliveryDate",
+                    "label": "Time Stamp",
+                    "order": 14,
+                    "isETag": false,
+                    "precision": 0,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "DateTime"
+                },
+                {
+                    "name": "CategoryDescription",
+                    "label": "CategoryDescription",
+                    "order": 15,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_SCAItems_ID",
+                    "label": "___Task_SCAItems_ID",
+                    "order": 16,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SCAItemApproval",
+            "nameSet": "SCAItemApprovalCollection",
+            "label": "SCAItemApproval",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "WorkitemID",
+                    "label": "WorkitemID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ItemNumber",
+                    "label": "ItemNumber",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ItemApproved",
+                    "label": "ItemApproved",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___SCAHeaderApproval_SCAApprovalItems_ID",
+                    "label": "___SCAHeaderApproval_SCAApprovalItems_ID",
+                    "order": 5,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SCAApprover",
+            "nameSet": "SCAApproverCollection",
+            "label": "SCAApprover",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "InstanceID",
+                    "label": "InstanceID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApproverID",
+                    "label": "ApproverID",
+                    "order": 3,
+                    "isETag": false,
+                    "maxLength": 12,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApproverSequence",
+                    "label": "Signed INT2 / int16",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "Int16"
+                },
+                {
+                    "name": "ApproverFirstName",
+                    "label": "ApproverFirstName",
+                    "order": 5,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApproverLastName",
+                    "label": "ApproverLastName",
+                    "order": 6,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApproverFullName",
+                    "label": "ApproverFullName",
+                    "order": 7,
+                    "isETag": false,
+                    "maxLength": 80,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApproverRole",
+                    "label": "ApproverRole",
+                    "order": 8,
+                    "isETag": false,
+                    "maxLength": 40,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApprovalStatus",
+                    "label": "ApprovalStatus",
+                    "order": 9,
+                    "isETag": false,
+                    "maxLength": 60,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ApprovalStatusCode",
+                    "label": "ApprovalStatusCode",
+                    "order": 10,
+                    "isETag": false,
+                    "maxLength": 8,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "___Task_SCAApproversHeader_ID",
+                    "label": "___Task_SCAApproversHeader_ID",
+                    "order": 11,
+                    "isForeignKey": true,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        },
+        {
+            "name": "SCAHeaderApproval",
+            "nameSet": "SCAHeaderApprovalCollection",
+            "label": "SCAHeaderApproval",
+            "media": false,
+            "readable": false,
+            "pageable": false,
+            "addressable": false,
+            "groups": [],
+            "tags": [],
+            "navigationProperties": [
+                {
+                    "name": "SCAApprovalItems",
+                    "referentialConstraints": [
+                    ],
+                    "isReadOnly": true,
+                    "multiplicity": true
+                }
+            ],
+            "properties": [
+                {
+                    "name": "ID",
+                    "label": "ID",
+                    "order": 1,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": true,
+                    "isReadOnly": false,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "WorkitemID",
+                    "label": "WorkitemID",
+                    "order": 2,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "ScNumber",
+                    "label": "ScNumber",
+                    "order": 3,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                },
+                {
+                    "name": "Comment",
+                    "label": "Comment",
+                    "order": 4,
+                    "isETag": false,
+                    "isForeignKey": false,
+                    "tags": [],
+                    "calculated": {
+                        "inputProperties": []
+                    },
+                    "isNullable": false,
+                    "isKey": false,
+                    "isReadOnly": true,
+                    "propertyType": "String"
+                }
+            ],
+            "isReadOnly": true
+        }
+    ]
+}

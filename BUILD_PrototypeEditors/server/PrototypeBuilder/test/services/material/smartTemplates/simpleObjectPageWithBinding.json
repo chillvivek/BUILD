@@ -1,0 +1,27 @@
+{
+  "name": "SimpleObjectPage",
+  "mainEntityId": "Entity1",
+  "rootControlId": "Header",
+  "floorplan": "OBJECTPAGE",
+  "controls": [
+    {
+      "controlId": "Header",
+      "controlName": "Header",
+      "parentControlId": null,
+      "catalogControlName": "Header",
+      "properties": [
+        {
+          "name": "Title",
+          "value" : "",
+          "binding" : {
+            "isRelative": true,
+            "paths": [{
+              "entityId": "Entity1",
+              "propertyId": "Prop1"
+            }]
+          }
+        }
+      ]
+    }
+  ]
+}

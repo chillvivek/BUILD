@@ -1,0 +1,43 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zanno4sample_anno_mdl.v1">
+            <Annotations Target="MyTestProject.SalesOrder">
+                <Annotation Term="com.sap.vocabularies.UI.v1.Facets">
+                    <Collection>
+                        <Record Type="com.sap.vocabularies.UI.v1.CollectionFacet">
+                            <PropertyValue Property="Label" String="Form"/>
+                            <PropertyValue Property="Facets">
+                                <Collection>
+                                    <Record Type="com.sap.vocabularies.UI.v1.ReferenceFacet">
+                                        <PropertyValue Property="Label" String=""/>
+                                        <PropertyValue Property="Target" AnnotationPath="@com.sap.vocabularies.UI.v1.FieldGroup"/>
+                                    </Record>
+                                </Collection>
+                            </PropertyValue>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="com.sap.vocabularies.UI.v1.FieldGroup">
+                    <Record Type="com.sap.vocabularies.UI.v1.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                                    <PropertyValue Property="Label" String="Label 1"/>
+                                    <PropertyValue Property="Url" String=""/>
+                                    <PropertyValue Property="Value" Path="ObjectPage-FormElement_0_0_Facets_Target_0_Data_Value"/>
+                                </Record>
+                                <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                                    <PropertyValue Property="Label" String="Label 2"/>
+                                    <PropertyValue Property="Url" String=""/>
+                                    <PropertyValue Property="Value" Path="ObjectPage-FormElement_0_0_Facets_Target_1_Data_Value"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="MyTestProject.SalesOrder/ObjectPage-FormElement_0_0_Facets_Target_0_Data_Value"/>
+            <Annotations Target="MyTestProject.SalesOrder/ObjectPage-FormElement_0_0_Facets_Target_1_Data_Value"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
