@@ -78,7 +78,6 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 
 ##Prerequisites
-- Ensure your proxy settings are resolved. 
 - install [GIT](https://git-scm.com/downloads)
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
 - install [node.js](https://docs.npmjs.com/cli/install) -_*only version 10.28 is supported*_
@@ -87,7 +86,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 1. Clone [BUILD](https://github.com/SAP/BUILD) repo
     ```sh
-    git clone git@github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD.git
+    git clone git@git@github.com:SAP/BUILD.git
     ```
 
 2. Install required node modules (dependencies):
