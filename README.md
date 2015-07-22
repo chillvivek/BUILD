@@ -69,22 +69,6 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
     npm install
     ```
 
-3. Build and run:
-
-    ```sh
-    grunt dist              // build for production*
-    cd dist                 // moves into new directory
-    node server/initSchema  // populate the library metadata** 
-                             (**needs to be executed once for a given database in a single node instance)
-    node server/app.js      // runs the BUILD application server at http://localhost:9000.
-    ```
-   Optional steps (after grunt dist):
-
-   ```sh
-   grunt dev            // just build in development mode (optional)
-   grunt serve          // build dev + start express server + watch js & less for changes (optional)
-   grunt serve:debug    // run app in debug mode (with node-inspector) (optional)
-   ```
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues)._ 
 
 ## Copyright and Licenses
