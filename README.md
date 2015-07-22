@@ -61,7 +61,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 1. Clone [BUILD](https://github.com/SAP/BUILD) repo
     ```sh
-    git clone git@github.com:SAP/BUILD.git
+    git clone https://github.com/SAP/BUILD.git
     ```
 
 2. Install required node modules (dependencies):
