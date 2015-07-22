@@ -95,8 +95,8 @@ For more information, see our [Contribution Guidelines](https://github.com/SAP/B
 ## Copyright and Licenses
 
 + [Apache License](https://github.com/SAP/BUILD/wiki/License)
-+ [Individual Contribution License Agreement](https://github.com/SAP/BUILD/blob/temp_build_all/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
-+ [Corporate Contributor License Agreement](https://github.com/SAP/BUILD/blob/temp_build_all/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
++ [Individual Contribution License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
++ [Corporate Contributor License Agreement]https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
 
 ## Legal Notices
 
