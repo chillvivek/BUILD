@@ -22,6 +22,8 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [node-sap-logging](https://github.com/SAP/BUILD/tree/master/node-sap-logging)
 + [node-sap-mongo-config](https://github.com/SAP/BUILD/tree/master/node-sap-mongo-config)
 + [node-sap-build](https://github.com/SAP/BUILD/tree/master/node-sap-build)
++ [angular-sap-html2canvas](https://github.com/SAP/BUILD/tree/master/angular-sap-html2canvas)
++ [angular-sap-d3-plugins](https://github.com/SAP/BUILD/tree/master/angular-sap-d3-plugins)
 
 **Build Modules**
 + [BUILD_PrototypeEditors](https://github.com/SAP/BUILD/tree/master/BUILD_PrototypeEditors)
@@ -37,9 +39,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [BUILD_AngularUIGrid](https://github.com/SAP/BUILD/tree/master/BUILD_NgUIGrid)
 + [BUILD_AngularUIGridTree](https://github.com/SAP/BUILD/tree/master/BUILD_norman-angular-ui-tree)
 + [BUILD_AngularUIGridZip](https://github.com/SAP/BUILD/tree/master/BUILD_AngularZip)
-+ [BUILD_Html2Canvas](https://github.com/SAP/BUILD/tree/master/angular-sap-html2canvas)
 + [BUILD_KeyBoardEventPolyfill](https://github.com/SAP/BUILD/tree/master/BUILD_norman-keyboard-event-polyfill)
-+ [BUILD_D3Plugins](https://github.com/SAP/BUILD/tree/master/angular-sap-d3-plugins)
 + [BUILD_jQuery](https://github.com/SAP/BUILD/tree/master/BUILD_jquery-norman)
 
 **Admin Modules**
