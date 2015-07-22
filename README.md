@@ -116,7 +116,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 ## Make a Contribution
 **Although we are not currently reviewing or accepting code contribution, our core-development team want to hear about any bugs you encounter, and answer any questions you might have!** 
 
-For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/wiki/Contribution-Guidelines).
+For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
 
 ## Copyright and Licenses
 
