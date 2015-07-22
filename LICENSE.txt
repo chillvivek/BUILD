@@ -290,6 +290,20 @@ License: BSD-3clause "New" or "revised" License
 <ORGANIZATION> = Gildas Lormeau
 <YEAR> = 2013-2014
 
+Component: d3-plugins master-c64935bf2a
+Licensor: Michael Bostock
+Website: https://github.com/mbostock/d3/wiki/Plugins
+License: BSD-3clause "New" or "revised" License
+<year> = 2012-2014
+<copyright holders> = Michael Bostock
+
+Component: polyfill 0.1.6
+Licensor: Joshua Bell
+Website: https://github.com/inexorabletash/polyfill/
+License: Public Domain
+<year> = 2014
+<copyright holders> = Joshua Bell
+
 Component: OpenUI5 Runtime 1.26.6
 Licensor: SAP SE
 Website: http://openui5.org/
