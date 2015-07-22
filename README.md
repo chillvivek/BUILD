@@ -111,7 +111,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
    grunt serve          // build dev + start express server + watch js & less for changes (optional)
    grunt serve:debug    // run app in debug mode (with node-inspector) (optional)
    ```
-_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/tree/master/issues)._ For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
+_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues)._ For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
 
 ## Make a Contribution
 **Although we are not currently reviewing or accepting code contribution, our core-development team want to hear about any bugs you encounter, and answer any questions you might have!** 
