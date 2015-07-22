@@ -3,7 +3,7 @@
 # Overview 
 BUILD (formerly known as Project Norman) is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
 
-For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/tree/master/BUILD_ALL/wiki/BUILD-Overview).
+For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
 # Modules in Build
 **Foundation Modules**
@@ -85,7 +85,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 ## Download / Clone
 
-1. Clone [BUILD](https://github.com/SAP/BUILD_ALL) repo
+1. Clone [BUILD](https://github.com/SAP/BUILD) repo
     ```sh
     git clone git@github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD.git
     ```
@@ -111,12 +111,12 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
    grunt serve          // build dev + start express server + watch js & less for changes (optional)
    grunt serve:debug    // run app in debug mode (with node-inspector) (optional)
    ```
-_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/tree/master/issues)._ For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD_ALL/wiki/Contribution-Guidelines).
+_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/tree/master/issues)._ For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
 
 ## Make a Contribution
 **Although we are not currently reviewing or accepting code contribution, our core-development team want to hear about any bugs you encounter, and answer any questions you might have!** 
 
-For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD_ALL/wiki/Contribution-Guidelines).
+For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/wiki/Contribution-Guidelines).
 
 ## Copyright and Licenses
 
@@ -126,4 +126,4 @@ For more information, see our [Contribution Guidelines](https://github.com/SAP/B
 
 ## Legal Notices
 
-[View the legal notice about fonts used in Build](https://github.com/SAP/BUILD_ALL/wiki/Legal-Notice-About-Fonts).
+[View the legal notice about fonts used in Build](https://github.com/SAP/BUILD/wiki/Legal-Notice-About-Fonts).
